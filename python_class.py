@@ -19,9 +19,9 @@ class Employee:
         print (self.num,'、'"职工名称:", self.name, ", 年龄:", self.age,"岁", ", 职位:", self.job, ", 工资:",self.salary,"元/月")
 
 
-obj1 = Employee(1,'何侃',27,'测试工程师',9000)
-obj2 = Employee(2,'朱明华',30,'服务器工程师',18000)
-obj3 = Employee(3,'凌云',28,'客户端工程师',14000)
+obj1 = Employee(1,'Peter',27,'测试工程师',10000)
+obj2 = Employee(2,'John',30,'服务器工程师',18000)
+obj3 = Employee(3,'steve',28,'客户端工程师',16000)
 
 obj1.displayEmployee()
 obj2.displayEmployee()
