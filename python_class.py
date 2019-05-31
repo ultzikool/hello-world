@@ -19,9 +19,9 @@ class Employee:
         print (self.num,'、'"职工名称:", self.name, ", 年龄:", self.age,"岁", ", 职位:", self.job, ", 工资:",self.salary,"元/月")
 
 
-obj1 = Employee(1,'何侃',27,'测试工程师',9000)
-obj2 = Employee(2,'朱明华',30,'服务器工程师',18000)
-obj3 = Employee(3,'凌云',28,'客户端工程师',14000)
+obj1 = Employee(1,'路飞',27,'测试工程师',9000)
+obj2 = Employee(2,'索隆',30,'服务器工程师',18000)
+obj3 = Employee(3,'乌索普',28,'客户端工程师',14000)
 
 obj1.displayEmployee()
 obj2.displayEmployee()
@@ -164,3 +164,31 @@ c1.eat()
 
 c2 = Dog("兜兜家的狗")
 c2.wwj()
+
+
+print()
+print()
+print()
+
+print("类的练习3")
+
+print('''要求：创建一个名为User的类，其中包含属性first_name和last_name，还有用户简介通常会存储的其他几个属性。在类User中定义一个名为describe_user()的方法，它打印用户信息摘要；再定义一个名为greet_user()的方法，它向用户发出个性化的问候。
+
+创建用户实例，调用上述两个方法。''')
+
+class User(object):
+
+    def __init__(self, first_name, last_name, age, gender):
+        self.name = last_name + " " + first_name
+        self.age = age
+        self.gender = gender
+
+    def describe_user(self):
+        print("用户的名字是：",self.name,  ",用户的年龄是：",self.age, ",用户的性别是：",self.gender)
+
+    def greet_user(self):
+        print("您好，欢迎来到花色互娱")
+
+a = User("Peterson","Tomas",19,"male")
+a.describe_user()
+a.greet_user()
